@@ -41,6 +41,36 @@ $mpdf->SetHTMLHeader('
 ');
 
 $html = '
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            color: #333;
+        }
+        table {
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px; 
+            text-align: left;
+        }
+        th {
+            background-color: #007bff; /* Cor de fundo do cabeçalho */
+            color: white; /* Cor do texto do cabeçalho */
+        }
+        tr:nth-child(even) {
+            background-color: #e9ecef; /* Cor das linhas pares */
+        }
+        tr:hover {
+            background-color: #d1ecf1; /* Cor ao passar o mouse */
+        }
+    </style>
 <table border="1" style="width: 100%; border-collapse: collapse;">
     <thead>
         <tr>
